@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "384286642965",
+    "project_id": "desafiocadastrogames",
+    "storage_bucket": "desafiocadastrogames.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:384286642965:android:1dbd4f883818ca27244f1c",
+        "android_client_info": {
+          "package_name": "com.manasomali.desafiocadastrogames"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "384286642965-jtpql6ff1647m7fmk890ha8s8t253o6j.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.manasomali.desafiocadastrogames",
+            "certificate_hash": "9f817887ea7e5707d9b8d21b5ca3248b03920eb1"
+          }
+        },
+        {
+          "client_id": "384286642965-gclae0cd7s4o24m7c9vacgq5juged4f7.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDVvh45UHUMUmcpe30-ZcbR3C_-OcIx8Po"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "384286642965-gclae0cd7s4o24m7c9vacgq5juged4f7.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
