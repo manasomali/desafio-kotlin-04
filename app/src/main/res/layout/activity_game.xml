@@ -6,4 +6,72 @@
     android:layout_height="match_parent"
     tools:context=".GameActivity">
 
+    <FrameLayout
+        android:id="@+id/frameLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/ImageView_Capa"
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            android:scaleType="fitCenter"
+            android:src="@drawable/capa3" />
+
+        <TextView
+            android:id="@+id/TextView_Tituo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="30dp"
+            android:layout_marginBottom="10dp"
+            android:background="@color/transparent"
+            android:backgroundTint="@color/transparent"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:shadowColor="#000000"
+            android:shadowDx="1.5"
+            android:shadowDy="1.3"
+            android:shadowRadius="1.6"
+            android:text="Nome"
+            android:textColor="@color/white"
+            android:textSize="35dp" />
+
+    </FrameLayout>
+
+    <com.mikhaellopez.circularimageview.CircularImageView
+        android:id="@+id/Button_Game_Edit"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_marginTop="215dp"
+        android:layout_marginRight="20dp"
+        app:civ_border="false"
+        android:scaleType="centerInside"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ic_edit" />
+
+    <ScrollView
+        android:id="@+id/scrollView2"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:background="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/frameLayout">
+
+        <TextView
+            android:id="@+id/TextView_Conteudo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="blabla blabla blabla blablablabla blabla blabla blablablabla blabla blabla blablablabla blabla blabla blablablabla blabla blabla blabla"
+            android:textSize="50dp"
+            android:textColor="@color/black"/>
+    </ScrollView>
 </androidx.constraintlayout.widget.ConstraintLayout>

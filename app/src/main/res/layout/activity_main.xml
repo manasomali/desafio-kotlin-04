@@ -1,18 +1,38 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".SplashActivity">
-
-    <TextView
+    android:background="#DDDDDD"
+    tools:context=".GameActivity">
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_margin="10dp"
+        android:drawableStart="@drawable/ic_search"
+        android:drawableEnd="@drawable/ic_mic"
+        android:paddingStart="15dp"
+        android:paddingEnd="15dp"
+        android:drawablePadding="10dp"
+        android:hint="Search Games"
+        android:textColorHint="@color/grey"
+        android:textSize="7pt"
+        android:background="@drawable/custom_backgroundwhite_roundborder_edittext" />
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_marginTop="70dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layoutManager="androidx.recyclerview.widget.GridLayoutManager"
+        app:spanCount="2"
+        tools:listitem="@layout/game" />
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        android:layout_gravity="bottom|right"
+        app:srcCompat="@drawable/ic_baseline_add_24"
+        android:backgroundTint="@color/vermelho"
+        android:layout_marginBottom="30dp"
+        android:layout_marginRight="10dp"/>
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+</FrameLayout>
