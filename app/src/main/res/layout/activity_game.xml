@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".GameActivity">
+    tools:context=".activities.GameActivity">
 
     <FrameLayout
         android:id="@+id/frameLayout"
@@ -13,7 +13,13 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
-
+        <ImageView
+            android:id="@+id/Button_Game_Voltar"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="20dp"
+            android:src="@drawable/ic_back" />
         <ImageView
             android:id="@+id/ImageView_Capa"
             android:layout_width="match_parent"
@@ -67,11 +73,31 @@
         app:layout_constraintTop_toBottomOf="@+id/frameLayout">
 
         <TextView
-            android:id="@+id/TextView_Conteudo"
+            android:id="@+id/TextView_Game_Titulo"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="blabla blabla blabla blablablabla blabla blabla blablablabla blabla blabla blablablabla blabla blabla blablablabla blabla blabla blabla"
-            android:textSize="50dp"
+            android:text="blabla"
+            android:textSize="10pt"
+            android:textColor="@color/black"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Lançamento: "
+            android:textSize="10pt"
+            android:textColor="@color/black"/>
+        <TextView
+            android:id="@+id/TextView_Game_Lancamento"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="blabla"
+            android:textSize="10pt"
+            android:textColor="@color/black"/>
+        <TextView
+            android:id="@+id/TextView_Game_Descricao"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="blabla"
+            android:textSize="10pt"
             android:textColor="@color/black"/>
     </ScrollView>
 </androidx.constraintlayout.widget.ConstraintLayout>

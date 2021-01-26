@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.manasomali.desafiocadastrogames">
-
+    <uses-permission android:name="android.permission.INTERNET" />
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -9,18 +9,18 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.DesafioCadastroGames">
-        <activity android:name=".MainActivity"></activity>
-        <activity android:name=".CadastroActivity" />
-        <activity android:name=".LoginActivity" />
-        <activity android:name=".AddGameActivity" />
-        <activity android:name=".SplashActivity" />
-        <activity android:name=".GameActivity">
+        <activity android:name=".activities.SplashActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity android:name=".activities.GamesActivity" />
+        <activity android:name=".activities.CadastroActivity" />
+        <activity android:name=".activities.LoginActivity" />
+        <activity android:name=".activities.AddGameActivity" />
+        <activity android:name=".activities.GameActivity" />
     </application>
 
 </manifest>

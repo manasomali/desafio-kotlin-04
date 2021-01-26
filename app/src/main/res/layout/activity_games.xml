@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#DDDDDD"
-    tools:context=".GameActivity">
+    tools:context=".activities.GamesActivity">
     <EditText
         android:layout_width="match_parent"
         android:layout_height="50dp"
@@ -20,6 +20,7 @@
         android:textSize="7pt"
         android:background="@drawable/custom_backgroundwhite_roundborder_edittext" />
     <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/RecyclerView_Main_Games"
         android:layout_marginTop="70dp"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
@@ -27,7 +28,8 @@
         app:spanCount="2"
         tools:listitem="@layout/game" />
     <com.google.android.material.floatingactionbutton.FloatingActionButton
-        android:layout_width="wrap_content"
+        android:id="@+id/FloatingActionButton_Main_Add"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_gravity="bottom|right"
         app:srcCompat="@drawable/ic_baseline_add_24"

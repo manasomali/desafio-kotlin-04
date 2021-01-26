@@ -1,9 +1,10 @@
-package com.manasomali.desafiocadastrogames
+package com.manasomali.desafiocadastrogames.activities
 
 import android.content.Intent
 import android.graphics.PorterDuff
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import com.manasomali.desafiocadastrogames.R
 import kotlinx.android.synthetic.main.activity_login.*
 
 class LoginActivity : AppCompatActivity() {
@@ -15,13 +16,11 @@ class LoginActivity : AppCompatActivity() {
         EditText_Login_Password.background.setColorFilter(getColor(R.color.grey), PorterDuff.Mode.SRC_IN)
 
         Button_Login_Login.setOnClickListener {
-            val intent = Intent(this, MainActivity::class.java)
-            startActivity(intent)
+            startActivity(Intent(this, GamesActivity::class.java))
         }
 
         Button_Login_Cadastro.setOnClickListener {
-            val intent = Intent(this, CadastroActivity::class.java)
-            startActivity(intent)
+            startActivity(Intent(this, CadastroActivity::class.java))
         }
     }
 }
