@@ -5,6 +5,7 @@ Android App para cadastro de jogos, desenvolvido usando firebase auth para login
 ## Uso
 
 Adição, edição e exclusão de jogos. Informações: Nome, Ano, Descrição e Imagem.
+https://youtu.be/yy-tsQx2V3U
 
 ## Referência
 
