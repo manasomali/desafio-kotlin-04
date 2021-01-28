@@ -6,35 +6,39 @@
     android:layout_height="match_parent"
     android:background="#DDDDDD"
     tools:context=".activities.GamesActivity">
-    <EditText
+    <androidx.appcompat.widget.SearchView
+        android:id="@+id/SearchView_Games_Pesquisa"
         android:layout_width="match_parent"
         android:layout_height="50dp"
         android:layout_margin="10dp"
         android:drawableStart="@drawable/ic_search"
-        android:drawableEnd="@drawable/ic_mic"
         android:paddingStart="15dp"
         android:paddingEnd="15dp"
         android:drawablePadding="10dp"
-        android:hint="Search Games"
-        android:textColorHint="@color/grey"
+        android:queryHint="Buscar"
+        app:queryHint="Buscar"
+        app:defaultQueryHint="Buscar"
+        android:iconifiedByDefault="false"
+        app:iconifiedByDefault="false"
         android:textSize="7pt"
+        android:theme="@style/CustomSearchView"
         android:background="@drawable/custom_backgroundwhite_roundborder_edittext" />
     <androidx.recyclerview.widget.RecyclerView
-        android:id="@+id/RecyclerView_Main_Games"
+        android:id="@+id/RecyclerView_Games_Games"
         android:layout_marginTop="70dp"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         app:layoutManager="androidx.recyclerview.widget.GridLayoutManager"
         app:spanCount="2"
         tools:listitem="@layout/game" />
-    <com.google.android.material.floatingactionbutton.FloatingActionButton
-        android:id="@+id/FloatingActionButton_Main_Add"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
+    <com.mikhaellopez.circularimageview.CircularImageView
+        android:id="@+id/Button_Games_Add"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
         android:layout_gravity="bottom|right"
-        app:srcCompat="@drawable/ic_baseline_add_24"
-        android:backgroundTint="@color/vermelho"
+        app:srcCompat="@drawable/ic_add"
+        app:civ_border="false"
         android:layout_marginBottom="30dp"
-        android:layout_marginRight="10dp"/>
+        android:layout_marginRight="20dp"/>
 
 </FrameLayout>

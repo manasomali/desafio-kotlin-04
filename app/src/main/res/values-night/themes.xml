@@ -12,5 +12,15 @@
         <!-- Status bar color. -->
         <item name="android:statusBarColor" tools:targetApi="l">?attr/colorPrimaryVariant</item>
         <!-- Customize your theme here. -->
+        <item name="searchViewStyle">@style/CustomSearchView</item>
+    </style>
+    <style name="CustomSearchView" parent="android:Theme.Holo">
+        <item name="android:editTextColor">@color/verdeclaro</item>
+        <item name="android:textColorHint">@color/grey</item>
+        <item name="editTextColor">@color/verdeclaro</item>
+        <item name="android:textColor">@color/verdeclaro</item>
+        <item name="hintTextColor">@color/verdeclaro</item>
+        <item name="closeIcon">@drawable/ic_back_grey</item>
+        <item name="searchIcon">@drawable/ic_search</item>
     </style>
 </resources>
